@@ -1,69 +1,89 @@
-@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&family=Lato:wght@400;900&family=Noto+Serif+Gujarati:wght@900&family=Roboto+Slab:wght@400;700&family=Silkscreen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
 
 * {
-    margin: 0 px;
-    padding: 0 px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
 }
+
 .wrapper {
     width: 1370px;
     margin: 0 auto;
 }
 
-.hadder {
+.header {
     height: 85px;
-    border-bottom:  1px solid D6D6D6;
+    border-bottom: 1px solid #D6D6D6;
 }
 
-.first_logotype,
-.first_nav
- {
+.first__logotype {
+    margin-top: 31px;
+}
+
+.first__logotype,
+.first__nav {
     float: left;
-
 }
-.first_login{
+
+.first__nav {
+    margin-top: 30px;
+}
+
+.first__login {
     float: right;
-    margin-right: 170px;
+    margin-top: 17px;
 }
 
-.first_login a {
+.first__login a {
     margin-top: 13px;
+    display: inline-block;
+    margin-right: 55px;
+    text-decoration: none;
 }
 
-.first_logotype {
+.first__login .button {
+    margin-top: 0;
+    color: #fff;
+    margin-right: 0;
+}
+
+.first__logotype {
     margin-right: 170px;
 }
 
-.first_nav ul {
+.first__nav ul {
     list-style: none;
 }
-.first_nav  ul li {
+
+.first__nav ul li {
     display: inline-block;
     margin-right: 90px;
 }
-.first_nav  ul li:last-child {
-    display: inline-block;
-    margin-right: 0px;
+
+.first__nav ul li:last-of-type {
+    margin-right: 0;
 }
-.first_nav a, .first_login a {
+
+.link {
     color: #292929;
     text-decoration: none;
     transition: all .2s;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+}
+
+.link:hover {
     border-bottom: 1px solid #292929;
 }
 
-.first_nav a:hover, .first_login a:hover {
-    border-bottom: 1px solid #292929;
-}
-
-.first_nav a:active, .first_login a:active {
+.link:active {
     color: #404040;
     border-bottom: 1px solid #404040;
-} 
+}
 
 .button {
     background-color: #01996D;
@@ -71,11 +91,12 @@ body {
     border-radius: 4px;
     color: #fff;
     transition: background-color .2s;
+}
 
-}
 .button:hover {
-    background-color: #018E65 ;
+    background-color: #018E65;
 }
+
 .button:active {
     background-color: #01845E;
 }
